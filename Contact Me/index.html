@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+</head>
+
+<body>
+    <h1>Contact Page</h1>
+    <section>
+        <a href="../About Me/index.html">About Page</a>
+        <a href="../Alphabets/index.html">Alphabets Page</a>
+        <a href="../Contact Me/index.html"> Contact Page</a>
+    </section>
+    <br>
+    <br>
+    <h2>Contact Me</h2>
+    <p>Kindly reach out to me using the form below</p>
+
+    <form name="contactForm" onsubmit="return validateForm()">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" required></textarea><br><br>
+        <label for="priority">Priority:</label><br>
+        <select id="priority" name="priority">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
